@@ -9,9 +9,9 @@
 
             <hr>
 
-            <form action="" method="post" enctype="multipart/form-data">
+            <form action="{{ route('student.store') }}" method="post" enctype="multipart/form-data">
 
-
+                @csrf
 
                 <div class="row">
                     <div class="col-6">
@@ -48,11 +48,11 @@
                             <label for="">Gender</label>
                             <br>
                             <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="male" name="gender" class="custom-control-input">
+                                <input type="radio" id="male" name="gender" value="male" class="custom-control-input">
                                 <label class="custom-control-label" for="male">Male</label>
                             </div>
                             <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="female" name="gender" class="custom-control-input">
+                                <input type="radio" id="female" name="gender" value="female" class="custom-control-input">
                                 <label class="custom-control-label" for="female">Female</label>
                             </div>
 
@@ -71,7 +71,7 @@
                             <label for="nationality">Programming Skill</label>
                             @foreach($skill as $s)
                                 <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" name="skill" id="{{ $s }}">
+                                    <input type="checkbox" class="custom-control-input" value="{{$s}}" name="skill[]" id="{{ $s }}">
                                     <label class="custom-control-label" for="{{ $s }}">{{ $s }}</label>
                                 </div>
                             @endforeach
