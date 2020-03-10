@@ -17,7 +17,7 @@ class StudentController extends Controller
         $fileName = uniqid();
         $fileExt = $request->file("photo")->getClientOriginalExtension();
         $newFileName = $fileName.".".$fileExt;
-        $request->file("photo")->storeAs("my-file",$newFileName);
+        $request->file("photo")->storeAs("public",$newFileName);
 
 
         $student = new Student();

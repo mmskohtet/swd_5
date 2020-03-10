@@ -30,14 +30,20 @@
 
                     <tr>
                         <td>{{ $l->id }}</td>
-                        <td>{{ $l->photo }}</td>
+                        <td>
+                            <img src="{{ asset('storage/'.$l->photo) }}" class="img-thumbnail" alt="">
+                        </td>
                         <td>{{ $l->name }}</td>
                         <td>{{ $l->email }}</td>
                         <td>{{ $l->phone }}</td>
                         <td>{{ $l->address }}</td>
                         <td>{{ $l->gender }}</td>
                         <td>{{ $l->nationality }}</td>
-                        <td>{{ $l->skill }}</td>
+                        <td>
+                            @foreach(json_decode($l->skill) as $s)
+                                <span class="badge badge-pill badge-primary">{{ $s }}</span>
+                                @endforeach
+                        </td>
                         <td>{{ $l->created_at }}</td>
                     </tr>
 

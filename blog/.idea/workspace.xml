@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f1af5c1-a953-49e8-8f91-b3d61465f660" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/certificate/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/certificate/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StudentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/StudentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/student/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/student/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/student/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/student/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/template/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/template/master.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +23,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -113,7 +118,9 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1YbqPTIbAZGqzUWPuUrSaf3qkFr" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -122,10 +129,13 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/storage/app/public" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/public/img" />
@@ -150,7 +160,10 @@
       <workItem from="1583221618203" duration="3467000" />
       <workItem from="1583305848216" duration="7983000" />
       <workItem from="1583379929140" duration="487000" />
-      <workItem from="1583392759822" duration="5948000" />
+      <workItem from="1583392759822" duration="7646000" />
+      <workItem from="1583402182771" duration="126000" />
+      <workItem from="1583466624150" duration="8000" />
+      <workItem from="1583825876618" duration="1751000" />
     </task>
     <servers />
   </component>
@@ -158,6 +171,11 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="653" y="359" key="com.intellij.ide.util.TipDialog" timestamp="1583825878039">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="653" y="359" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1583825878039" />
+    <state x="653" y="356" key="com.intellij.ide.util.TipDialog/0.23.1920.1001@0.23.1920.1001" timestamp="1583402182804" />
     <state x="625" y="255" key="run.anything.popup" timestamp="1583314355810">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
