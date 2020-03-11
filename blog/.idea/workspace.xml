@@ -6,7 +6,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CertificateController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CertificateController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/CertificateFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/CertificateFactory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_10_074212_create_certificates_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_03_10_074212_create_certificates_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/CertificateSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/CertificateSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/certificate/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/certificate/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/certificate/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/certificate/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/certificate/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/certificate/index.blade.php" afterDir="false" />
@@ -167,7 +170,7 @@
       <workItem from="1583402182771" duration="126000" />
       <workItem from="1583466624150" duration="8000" />
       <workItem from="1583825876618" duration="8075000" />
-      <workItem from="1583910859909" duration="2239000" />
+      <workItem from="1583910859909" duration="3017000" />
     </task>
     <servers />
   </component>

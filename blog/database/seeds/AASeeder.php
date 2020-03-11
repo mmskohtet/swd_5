@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class CertificateSeeder extends Seeder
+class AASeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,8 +11,6 @@ class CertificateSeeder extends Seeder
      */
     public function run()
     {
-
-        factory(App\Certificate::class,100)->create();
-
+        //
     }
 }
