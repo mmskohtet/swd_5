@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f1af5c1-a953-49e8-8f91-b3d61465f660" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/certificate/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/certificate/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StudentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/StudentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/student/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/student/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CertificateController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CertificateController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_10_074212_create_certificates_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_03_10_074212_create_certificates_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/certificate/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/certificate/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/certificate/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/certificate/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/certificate/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/certificate/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/template/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/template/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/template/nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/template/nav.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +25,7 @@
     </execution>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
@@ -163,7 +166,8 @@
       <workItem from="1583392759822" duration="7646000" />
       <workItem from="1583402182771" duration="126000" />
       <workItem from="1583466624150" duration="8000" />
-      <workItem from="1583825876618" duration="1751000" />
+      <workItem from="1583825876618" duration="8075000" />
+      <workItem from="1583910859909" duration="2239000" />
     </task>
     <servers />
   </component>
@@ -180,5 +184,9 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="625" y="255" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1583314355810" />
+    <state x="625" y="241" width="670" height="676" key="search.everywhere.popup" timestamp="1583829255510">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="625" y="241" width="670" height="676" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1583829255510" />
   </component>
 </project>

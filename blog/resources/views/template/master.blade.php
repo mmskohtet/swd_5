@@ -8,6 +8,7 @@
     <title>@yield("title")</title>
     <link rel="stylesheet" href="{{ asset("css/bootstrap.css") }}">
     <link rel="stylesheet" href="{{ asset("css/all.css") }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
 <body>
 @include("template.nav")

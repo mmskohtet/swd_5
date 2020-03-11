@@ -14,7 +14,8 @@ class CertificateController extends Controller
      */
     public function index()
     {
-        //
+        $lists = Certificate::latest()->get();
+        return view("certificate.index",compact("lists"));
     }
 
     /**
@@ -24,7 +25,10 @@ class CertificateController extends Controller
      */
     public function create()
     {
-        return  view("certificate.create");
+        $certificate = new Certificate();
+        $lists = $certificate->latest()->get();
+
+        return  view("certificate.create",compact("lists"));
     }
 
     /**
@@ -35,7 +39,21 @@ class CertificateController extends Controller
      */
     public function store(Request $request)
     {
-        return  $request;
+        //validation
+        $request->validate([
+            "name" => "required",
+            "nrc" => "required|unique:certificates,nrc"
+        ]);
+
+        //insert data
+        $certificate = new Certificate();
+        $certificate->name = $request->name;
+        $certificate->nrc = $request->nrc;
+        $certificate->save();
+
+        //response
+
+        return redirect()->route("certificate.create")->with("status","$request->name's Certificate Added");
     }
 
     /**
@@ -46,7 +64,7 @@ class CertificateController extends Controller
      */
     public function show(Certificate $certificate)
     {
-        //
+        return $certificate;
     }
 
     /**
@@ -57,7 +75,8 @@ class CertificateController extends Controller
      */
     public function edit(Certificate $certificate)
     {
-        //
+        $info = $certificate;
+        return view("certificate.edit",compact('info'));
     }
 
     /**
@@ -69,7 +88,12 @@ class CertificateController extends Controller
      */
     public function update(Request $request, Certificate $certificate)
     {
-        //
+
+
+        $certificate->name = $request->name;
+        $certificate->nrc = $request->nrc;
+        $certificate->update();
+        return redirect()->route("certificate.index")->with("status","Update Successfully");
     }
 
     /**
@@ -80,6 +104,9 @@ class CertificateController extends Controller
      */
     public function destroy(Certificate $certificate)
     {
-        //
+        $name = $certificate->name;
+        $certificate->delete();
+
+        return redirect()->back()->with("status","$name is deleted ...");
     }
 }
