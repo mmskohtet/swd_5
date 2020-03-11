@@ -42,6 +42,8 @@
 
                 <hr>
 
+
+
                 <table class="table table-striped">
                     <thead>
                     <tr>
@@ -92,6 +94,26 @@
 
                     </tbody>
                 </table>
+
+                <div class="d-flex justify-content-between">
+                    <div class="abc">
+                        {{ $lists->links() }}
+                    </div>
+                    <div class="search">
+                        <form action="{{ route("certificate.search") }}" method="post">
+                            @csrf
+                            <div class="form-inline">
+                                <input type="text" name="search" class="form-control">
+                                <button class="btn btn-primary ml-2">
+                                    <i class="fas fa-search"></i> Search
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+
             </div>
         </div>
     </div>

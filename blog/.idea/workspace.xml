@@ -15,6 +15,7 @@
       <change beforePath="$PROJECT_DIR$/resources/views/certificate/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/certificate/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/template/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/template/master.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/template/nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/template/nav.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +171,7 @@
       <workItem from="1583402182771" duration="126000" />
       <workItem from="1583466624150" duration="8000" />
       <workItem from="1583825876618" duration="8075000" />
-      <workItem from="1583910859909" duration="3017000" />
+      <workItem from="1583910859909" duration="5962000" />
     </task>
     <servers />
   </component>

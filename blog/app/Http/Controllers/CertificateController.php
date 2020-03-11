@@ -14,8 +14,20 @@ class CertificateController extends Controller
      */
     public function index()
     {
-        $lists = Certificate::latest()->get();
+        $lists = Certificate::latest()->paginate(5);
         return view("certificate.index",compact("lists"));
+    }
+
+    public function search(Request $request){
+
+        $request->validate([
+            "search" => "required|max:50"
+        ]);
+
+        $certificate = new Certificate();
+        $lists = $certificate->where("name","LIKE","%$request->search%")->paginate(5);
+        return view("certificate.create",compact("lists"));
+
     }
 
     /**
@@ -26,7 +38,7 @@ class CertificateController extends Controller
     public function create()
     {
         $certificate = new Certificate();
-        $lists = $certificate->latest()->get();
+        $lists = $certificate->latest()->paginate(5);
 
         return  view("certificate.create",compact("lists"));
     }

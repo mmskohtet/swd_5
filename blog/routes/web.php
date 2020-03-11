@@ -9,4 +9,5 @@ Route::post("/student/create","StudentController@store")->name("student.store");
 Route::get("/student","StudentController@index")->name("student.index");
 
 Route::resource("/certificate","CertificateController");
+Route::post("certificate-search","CertificateController@search")->name("certificate.search");
 
