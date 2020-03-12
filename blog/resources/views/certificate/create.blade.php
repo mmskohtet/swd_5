@@ -69,7 +69,9 @@
 
                             <tr>
                                 <td>{{ $l->id }}</td>
-                                <td>{{ $l->photo }}</td>
+                                <td>
+                                    <img src="{{ asset($l->photo) }}" style="width: 50px" class="rounded-circle" alt="">
+                                </td>
                                 <td>{{ $l->name }}</td>
                                 <td>{{ $l->nrc }}</td>
                                 <td>

@@ -53,14 +53,28 @@ class CertificateController extends Controller
     {
         //validation
         $request->validate([
+            "photo" => "required|mimes:jpeg,png,gif|max:1000|dimensions:ratio=1",
             "name" => "required",
             "nrc" => "required|unique:certificates,nrc"
         ]);
+
+
+
+
+        $dir = "img/";
+        $randName = uniqid()."_photo.".$request->file("photo")->getClientOriginalExtension();
+
+        $request->file("photo")->move($dir,$randName);
+
+
+
+
 
         //insert data
         $certificate = new Certificate();
         $certificate->name = $request->name;
         $certificate->nrc = $request->nrc;
+        $certificate->photo = $dir.$randName;
         $certificate->save();
 
         //response
@@ -102,8 +116,27 @@ class CertificateController extends Controller
     {
 
 
+        $request->validate([
+            "photo" => "sometimes|mimes:jpeg,png,gif|max:1000|dimensions:ratio=1",
+            "name" => "required",
+            "nrc" => "required|unique:certificates,nrc,".$certificate->id
+        ]);
+
+
         $certificate->name = $request->name;
         $certificate->nrc = $request->nrc;
+
+        if($request->hasFile("photo")){
+
+            $dir = "img/";
+            $randName = uniqid()."_photo.".$request->file("photo")->getClientOriginalExtension();
+
+            $request->file("photo")->move($dir,$randName);
+            $certificate->photo = $dir.$randName;
+
+        }
+
+
         $certificate->update();
         return redirect()->route("certificate.index")->with("status","Update Successfully");
     }
