@@ -2,10 +2,7 @@
 
 namespace App\Providers;
 
-
-use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
-
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -16,13 +13,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $categories = ["Myanmar","English","China"];
-        $skill = ["HTML","CSS","JavaScript","PHP","SQL"];
-        $division = ["yangon","mandalay","nay pyi taw","maw la myine"];
-
-        View::share("categories",$categories);
-        View::share("skill",$skill);
-        View::share("division",$division);
+        //
     }
 
     /**
