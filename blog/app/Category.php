@@ -13,4 +13,8 @@ class Category extends Model
 
     }
 
+    public function getRating(){
+        return
+    }
+
 }

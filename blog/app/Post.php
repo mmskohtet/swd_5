@@ -21,4 +21,10 @@ class Post extends Model
     public function getUser(){
         return $this->belongsTo("App\User","user_id");
     }
+
+    public function getRating(){
+        return $this->morphMany("App\Rating","ratable");
+    }
+
+
 }
